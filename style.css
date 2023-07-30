@@ -5,12 +5,15 @@
   box-sizing: border-box;
   outline: none;
   scroll-padding-top: 40px;
+  scroll-behavior: smooth;
 }
 :root {
   --purple-btn: #5b25b3;
   --purple-btn-hover: #4d1f98;
   --purple-footer: #4d1f99;
   --purple-light: #f9f3ff;
+  --yellow-default: #ffdb55;
+  --green-default: #00b084;
 }
 
 header {
@@ -164,8 +167,46 @@ nav {
   padding: 8px 16px;
   border-radius: 20px;
   font-weight: 600;
-  transition: 200ms ease-in;
+  transition: 100ms ease-in;
 }
 .button-type-3:hover {
   opacity: 0.8;
+}
+#contact {
+  background: var(--purple-footer);
+  color: white;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.display-contact h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.display-contact a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+.display-contact a:hover {
+  color: var(--green-default);
+  text-decoration: underline;
+}
+.copyright {
+  font-size: 15px;
+  padding: 17px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+}
+.copyright a {
+  text-decoration: none;
+  color: black;
+}
+.copyright a:hover {
+  text-decoration: underline;
 }
