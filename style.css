@@ -30,6 +30,11 @@ header {
 #logo {
   height: 41px;
 }
+.bx-menu {
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+}
 nav {
   display: flex;
   align-items: center;
@@ -237,3 +242,39 @@ nav {
 #contact {
   padding: 10px;
 } */
+
+@media (max-width: 800px) {
+  .hd-links {
+    gap: 2px;
+  }
+  .hd-links a {
+    font-size: 15px;
+  }
+  #home {
+    padding: 65px 40px;
+  }
+  .hm-separator {
+    padding-top: 20px;
+  }
+  .hm-1 img {
+    width: 300px;
+  }
+  .hm-2 h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 680px) {
+  .bx-menu {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .hm-separator {
+    flex-direction: column;
+  }
+}
