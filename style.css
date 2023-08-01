@@ -348,6 +348,12 @@ nav {
   .hm-separator {
     padding: 30px 0;
   }
+  .association img {
+    height: 24px;
+  }
+  .association img:last-child {
+    height: 50px;
+  }
   .hm-1 img {
     width: 100%;
   }
@@ -369,11 +375,14 @@ nav {
   .content-icon {
     width: 100%;
   }
+  .content-icon img {
+    width: 70px;
+  }
   .slt-2 h2 {
     font-size: 25px;
   }
   #contact {
     padding: 30px;
-    gap: 15px 32px;
+    gap: 25px 32px;
   }
 }
