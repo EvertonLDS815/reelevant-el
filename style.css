@@ -9,8 +9,7 @@
 }
 :root {
   --purple-btn: #5b25b3;
-  --purple-btn-hover: #4d1f98;
-  --purple-footer: #4d1f99;
+  --purple-dark: #4d1f98;
   --purple-light: #f9f3ff;
   --yellow-default: #ffdb55;
   --green-default: #00b084;
@@ -63,13 +62,12 @@ nav {
   font-weight: 500;
 }
 .pg-button:hover {
-  background: var(--purple-btn-hover);
+  background: var(--purple-dark);
 }
 /* ------------------------------- Home --------------------------- */
 #home {
   padding: 50px;
   padding-top: 75px;
-  /* background: var(--purple-light); */
 }
 #home .hm-separator {
   display: flex;
@@ -97,7 +95,6 @@ nav {
 /* ------------------------------- About --------------------------- */
 
 #about {
-  /* background: var(--purple-light); */
   padding: 50px;
   display: flex;
   gap: 30px;
@@ -180,7 +177,7 @@ nav {
 /* ------------------------------- Contact --------------------------- */
 
 #contact {
-  background: var(--purple-footer);
+  background: var(--purple-dark);
   color: white;
   padding: 30px 50px;
   display: grid;
@@ -233,16 +230,7 @@ nav {
 .copyright a:hover {
   text-decoration: underline;
 }
-/* .hm-1 img,
-.ab-2 img,
-.hd-links,
-.slt-2 {
-  display: none;
-}
-#contact {
-  padding: 10px;
-} */
-
+/* --------------------------- @media ---------------------- */
 @media (max-width: 800px) {
   .hd-links {
     gap: 2px;
@@ -383,6 +371,9 @@ nav {
   }
   #contact {
     padding: 30px;
-    gap: 25px 32px;
+    gap: 27px 32px;
+  }
+  .display-contact h3 {
+    margin-bottom: 20px;
   }
 }
