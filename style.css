@@ -41,6 +41,15 @@ nav {
   align-items: center;
   gap: 15px;
 }
+#overlay {
+  display: none;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 62px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 .hd-links {
   display: flex;
   gap: 8px;
@@ -61,6 +70,7 @@ nav {
   padding: 8px 16px;
   border: none;
   border-radius: 20px;
+  font-size: 15px;
   font-weight: 500;
 }
 .pg-button:hover {
@@ -115,6 +125,7 @@ nav {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 20px;
+  font-size: 15px;
   font-weight: 500;
   transition: 200ms ease-in;
 }
@@ -235,7 +246,7 @@ nav {
 /* --------------------------- @media ---------------------- */
 @media (max-width: 800px) {
   .hd-links {
-    gap: 2px;
+    gap: 0;
   }
   .hd-links a {
     font-size: 15px;
@@ -297,6 +308,11 @@ nav {
     width: 100%;
     text-align: center;
   }
+  .hd-links a {
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px 0;
+  }
   .bx-menu {
     display: block;
   }
@@ -306,18 +322,16 @@ nav {
     box-shadow: 2px 8px 1rem #ccc;
     flex-direction: column;
     height: 100%;
-    padding-top: 20px;
+    padding-top: 25px;
     position: fixed;
     top: 62px;
     right: 0;
     overflow: hidden;
+    z-index: 5;
     transition: width 250ms;
   }
   nav .pg-button {
-    position: absolute;
-    top: 175px;
-    min-width: 115px;
-    border-radius: 40px;
+    min-width: 120px;
   }
   #about {
     flex-direction: column;
@@ -335,6 +349,9 @@ nav {
   nav {
     top: 56px;
   }
+  #overlay {
+    top: 56px;
+  }
   .hm-separator {
     flex-direction: column;
   }
@@ -345,7 +362,7 @@ nav {
 
 @media(max-width: 485px) {
   :root {
-    --width-menu: 160px;
+    --width-menu: 170px;
   }
   .slt-1 {
     flex-wrap: wrap;
