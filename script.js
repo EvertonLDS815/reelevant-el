@@ -21,4 +21,4 @@ overlay.addEventListener("click", closeMenu);
 
 const newDate = new Date();
 const year = newDate.getFullYear();
-myDate.innerHTML = `© ${year} - Todos os Direitos Reservados`
+myDate.innerHTML = `© ${year} - Todos os Direitos Reservados`;
